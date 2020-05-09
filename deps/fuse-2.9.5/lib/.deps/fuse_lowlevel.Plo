@@ -1,0 +1,112 @@
+fuse_lowlevel.lo: fuse_lowlevel.c ../include/config.h fuse_i.h \
+ ../include/fuse.h ../include/fuse_common.h ../include/fuse_opt.h \
+ /opt/musl/include/stdint.h /opt/musl/include/bits/alltypes.h \
+ /opt/musl/include/bits/stdint.h /opt/musl/include/sys/types.h \
+ /opt/musl/include/features.h /opt/musl/include/endian.h \
+ /opt/musl/include/sys/select.h /opt/musl/include/sys/sysmacros.h \
+ /opt/musl/include/fcntl.h /opt/musl/include/bits/fcntl.h \
+ /opt/musl/include/time.h /opt/musl/include/utime.h \
+ /opt/musl/include/sys/stat.h /opt/musl/include/bits/stat.h \
+ /opt/musl/include/sys/statvfs.h /opt/musl/include/sys/uio.h \
+ ../include/fuse_lowlevel.h ../include/fuse_kernel.h \
+ ../include/fuse_opt.h fuse_misc.h /opt/musl/include/pthread.h \
+ /opt/musl/include/sched.h ../include/fuse_common_compat.h \
+ ../include/fuse_lowlevel_compat.h /opt/musl/include/sys/statfs.h \
+ /opt/musl/include/bits/statfs.h /opt/musl/include/stdio.h \
+ /opt/musl/include/stdlib.h /opt/musl/include/alloca.h \
+ /opt/musl/include/stddef.h /opt/musl/include/string.h \
+ /opt/musl/include/strings.h /opt/musl/include/unistd.h \
+ /opt/musl/include/bits/posix.h /opt/musl/include/limits.h \
+ /opt/musl/include/bits/limits.h /opt/musl/include/errno.h \
+ /opt/musl/include/bits/errno.h /opt/musl/include/assert.h \
+ /opt/musl/include/sys/file.h
+
+../include/config.h:
+
+fuse_i.h:
+
+../include/fuse.h:
+
+../include/fuse_common.h:
+
+../include/fuse_opt.h:
+
+/opt/musl/include/stdint.h:
+
+/opt/musl/include/bits/alltypes.h:
+
+/opt/musl/include/bits/stdint.h:
+
+/opt/musl/include/sys/types.h:
+
+/opt/musl/include/features.h:
+
+/opt/musl/include/endian.h:
+
+/opt/musl/include/sys/select.h:
+
+/opt/musl/include/sys/sysmacros.h:
+
+/opt/musl/include/fcntl.h:
+
+/opt/musl/include/bits/fcntl.h:
+
+/opt/musl/include/time.h:
+
+/opt/musl/include/utime.h:
+
+/opt/musl/include/sys/stat.h:
+
+/opt/musl/include/bits/stat.h:
+
+/opt/musl/include/sys/statvfs.h:
+
+/opt/musl/include/sys/uio.h:
+
+../include/fuse_lowlevel.h:
+
+../include/fuse_kernel.h:
+
+../include/fuse_opt.h:
+
+fuse_misc.h:
+
+/opt/musl/include/pthread.h:
+
+/opt/musl/include/sched.h:
+
+../include/fuse_common_compat.h:
+
+../include/fuse_lowlevel_compat.h:
+
+/opt/musl/include/sys/statfs.h:
+
+/opt/musl/include/bits/statfs.h:
+
+/opt/musl/include/stdio.h:
+
+/opt/musl/include/stdlib.h:
+
+/opt/musl/include/alloca.h:
+
+/opt/musl/include/stddef.h:
+
+/opt/musl/include/string.h:
+
+/opt/musl/include/strings.h:
+
+/opt/musl/include/unistd.h:
+
+/opt/musl/include/bits/posix.h:
+
+/opt/musl/include/limits.h:
+
+/opt/musl/include/bits/limits.h:
+
+/opt/musl/include/errno.h:
+
+/opt/musl/include/bits/errno.h:
+
+/opt/musl/include/assert.h:
+
+/opt/musl/include/sys/file.h:

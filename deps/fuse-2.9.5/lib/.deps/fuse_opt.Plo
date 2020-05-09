@@ -1,0 +1,35 @@
+fuse_opt.lo: fuse_opt.c ../include/fuse_opt.h fuse_misc.h \
+ ../include/config.h /opt/musl/include/pthread.h \
+ /opt/musl/include/features.h /opt/musl/include/bits/alltypes.h \
+ /opt/musl/include/sched.h /opt/musl/include/time.h \
+ /opt/musl/include/stdio.h /opt/musl/include/stdlib.h \
+ /opt/musl/include/alloca.h /opt/musl/include/string.h \
+ /opt/musl/include/strings.h /opt/musl/include/assert.h
+
+../include/fuse_opt.h:
+
+fuse_misc.h:
+
+../include/config.h:
+
+/opt/musl/include/pthread.h:
+
+/opt/musl/include/features.h:
+
+/opt/musl/include/bits/alltypes.h:
+
+/opt/musl/include/sched.h:
+
+/opt/musl/include/time.h:
+
+/opt/musl/include/stdio.h:
+
+/opt/musl/include/stdlib.h:
+
+/opt/musl/include/alloca.h:
+
+/opt/musl/include/string.h:
+
+/opt/musl/include/strings.h:
+
+/opt/musl/include/assert.h:

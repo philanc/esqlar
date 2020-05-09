@@ -1,0 +1,70 @@
+fuse_kern_chan.lo: fuse_kern_chan.c ../include/fuse_lowlevel.h \
+ ../include/fuse_common.h ../include/fuse_opt.h \
+ /opt/musl/include/stdint.h /opt/musl/include/bits/alltypes.h \
+ /opt/musl/include/bits/stdint.h /opt/musl/include/sys/types.h \
+ /opt/musl/include/features.h /opt/musl/include/endian.h \
+ /opt/musl/include/sys/select.h /opt/musl/include/sys/sysmacros.h \
+ /opt/musl/include/utime.h /opt/musl/include/fcntl.h \
+ /opt/musl/include/bits/fcntl.h /opt/musl/include/sys/stat.h \
+ /opt/musl/include/bits/stat.h /opt/musl/include/sys/statvfs.h \
+ /opt/musl/include/sys/uio.h ../include/fuse_kernel.h fuse_i.h \
+ ../include/fuse.h /opt/musl/include/time.h /opt/musl/include/stdio.h \
+ /opt/musl/include/errno.h /opt/musl/include/bits/errno.h \
+ /opt/musl/include/unistd.h /opt/musl/include/bits/posix.h \
+ /opt/musl/include/assert.h
+
+../include/fuse_lowlevel.h:
+
+../include/fuse_common.h:
+
+../include/fuse_opt.h:
+
+/opt/musl/include/stdint.h:
+
+/opt/musl/include/bits/alltypes.h:
+
+/opt/musl/include/bits/stdint.h:
+
+/opt/musl/include/sys/types.h:
+
+/opt/musl/include/features.h:
+
+/opt/musl/include/endian.h:
+
+/opt/musl/include/sys/select.h:
+
+/opt/musl/include/sys/sysmacros.h:
+
+/opt/musl/include/utime.h:
+
+/opt/musl/include/fcntl.h:
+
+/opt/musl/include/bits/fcntl.h:
+
+/opt/musl/include/sys/stat.h:
+
+/opt/musl/include/bits/stat.h:
+
+/opt/musl/include/sys/statvfs.h:
+
+/opt/musl/include/sys/uio.h:
+
+../include/fuse_kernel.h:
+
+fuse_i.h:
+
+../include/fuse.h:
+
+/opt/musl/include/time.h:
+
+/opt/musl/include/stdio.h:
+
+/opt/musl/include/errno.h:
+
+/opt/musl/include/bits/errno.h:
+
+/opt/musl/include/unistd.h:
+
+/opt/musl/include/bits/posix.h:
+
+/opt/musl/include/assert.h:

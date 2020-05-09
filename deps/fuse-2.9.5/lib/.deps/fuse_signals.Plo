@@ -1,0 +1,58 @@
+fuse_signals.lo: fuse_signals.c ../include/fuse_lowlevel.h \
+ ../include/fuse_common.h ../include/fuse_opt.h \
+ /opt/musl/include/stdint.h /opt/musl/include/bits/alltypes.h \
+ /opt/musl/include/bits/stdint.h /opt/musl/include/sys/types.h \
+ /opt/musl/include/features.h /opt/musl/include/endian.h \
+ /opt/musl/include/sys/select.h /opt/musl/include/sys/sysmacros.h \
+ /opt/musl/include/utime.h /opt/musl/include/fcntl.h \
+ /opt/musl/include/bits/fcntl.h /opt/musl/include/sys/stat.h \
+ /opt/musl/include/bits/stat.h /opt/musl/include/sys/statvfs.h \
+ /opt/musl/include/sys/uio.h /opt/musl/include/stdio.h \
+ /opt/musl/include/string.h /opt/musl/include/strings.h \
+ /opt/musl/include/signal.h /opt/musl/include/bits/signal.h
+
+../include/fuse_lowlevel.h:
+
+../include/fuse_common.h:
+
+../include/fuse_opt.h:
+
+/opt/musl/include/stdint.h:
+
+/opt/musl/include/bits/alltypes.h:
+
+/opt/musl/include/bits/stdint.h:
+
+/opt/musl/include/sys/types.h:
+
+/opt/musl/include/features.h:
+
+/opt/musl/include/endian.h:
+
+/opt/musl/include/sys/select.h:
+
+/opt/musl/include/sys/sysmacros.h:
+
+/opt/musl/include/utime.h:
+
+/opt/musl/include/fcntl.h:
+
+/opt/musl/include/bits/fcntl.h:
+
+/opt/musl/include/sys/stat.h:
+
+/opt/musl/include/bits/stat.h:
+
+/opt/musl/include/sys/statvfs.h:
+
+/opt/musl/include/sys/uio.h:
+
+/opt/musl/include/stdio.h:
+
+/opt/musl/include/string.h:
+
+/opt/musl/include/strings.h:
+
+/opt/musl/include/signal.h:
+
+/opt/musl/include/bits/signal.h:

@@ -1,0 +1,53 @@
+
+# build static with gcc and musl libc
+CC = /opt/musl/bin/musl-gcc -g 
+
+# source dirs  (libfuse and libz)
+ZDIR = ./deps/zlib-1.2.11
+FUSEDIR = ./deps/fuse-2.9.5
+
+LIBS = libfuse.a libz.a
+INCL = -I.
+CFLAGS = -static -Os $(INCL)
+
+SQLITE_OPT = -DSQLITE_THREADSAFE=0 -DSQLITE_OMIT_LOAD_EXTENSION
+SQLITE_OPT += -DSQLITE_OMIT_SHAREDCACHE -DSQLITE_HAS_CODEC 
+SQLITE_OPT += -D_FILE_OFFSET_BITS=64
+
+all: esqlar esqlarfs
+
+esqlar: sqlar.c sqlite3.o $(LIBS)
+	$(CC) $(CFLAGS) -o esqlar $(SQLITE_OPT) sqlar.c sqlite3.o $(LIBS)
+	strip esqlar
+
+esqlarfs: sqlarfs.c sqlite3.o $(LIBS)
+	$(CC) $(CFLAGS) -o esqlarfs $(SQLITE_OPT) sqlarfs.c sqlite3.o $(LIBS)
+	strip esqlarfs
+
+libz.a:
+	cd $(ZDIR) ; \
+		CC=/opt/musl/bin/musl-gcc CFLAGS="-Os -static" \
+		./configure --static \
+		&& make libz.a \
+		&& cp zconf.h zlib.h ../.. \
+		&& mv libz.a  ../..
+
+libfuse.a:
+	cd $(FUSEDIR) ; \
+		./configure CC=/opt/musl/bin/musl-gcc  CFLAGS="-Os -static" \
+			--enable-lib --disable-util --disable-mtab  \
+			--disable-example  \
+		&& make  \
+		&& mv lib/.libs/libfuse.a ../.. \
+		&& cp include/fuse.h include/fuse_common.h \
+			include/fuse_opt.h ../..
+	
+
+sqlite3.o: sqlite3.c sqlite3.h codec.c
+	$(CC) $(CFLAGS) $(SQLITE_OPT) -c codec.c -o sqlite3.o
+
+clean:	
+	rm -f esqlar esqlarfs *.o *.a zlib.h zconf.h fuse*.h zz zzc ; \
+	cd $(ZDIR) ; make clean ; cd ../..  ;  \
+	cd $(FUSEDIR) ; make clean ; cd ../.. ;  
+	
